@@ -1009,6 +1009,44 @@ section,
 }
 
 /*--------------------------------------------------------------
+# VISI MISI Section
+--------------------------------------------------------------*/
+
+#visi-misi .card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+#visi-misi .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+#visi-misi .card-title i {
+  font-size: 1.5rem;
+}
+
+#visi-misi ul {
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 400px) {
+  #visi-misi .card {
+    padding: 1.5rem 1rem;
+  }
+
+  #visi-misi .card-title {
+    font-size: 1.1rem;
+  }
+
+  #visi-misi .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+/*--------------------------------------------------------------
 # Values Section
 --------------------------------------------------------------*/
 .values .card {
@@ -1040,6 +1078,51 @@ section,
 
 .values .card:hover img {
   transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .scroll-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .card-col {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    min-width: 280px;
+    margin-right: 16px; /* beri jarak antar card */
+  }
+}
+
+/* @media (max-width: 768px) {
+  .values .row.scroll-cards {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .values .card-col {
+    flex: 0 0 auto;
+    min-width: 280px;
+  }
+} */
+
+.scroll-indicator .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.scroll-indicator .dot.active {
+  background-color: var(--accent-color); /* atau warna utamamu */
 }
 
 /*--------------------------------------------------------------
@@ -1145,7 +1228,7 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
-  padding: 60px 30px;
+  padding: 20px 10px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
@@ -1153,7 +1236,7 @@ section,
 
 .services .service-item .icon {
   font-size: 36px;
-  padding: 20px 20px;
+  padding: 10px 10px;
   border-radius: 4px;
   position: relative;
   margin-bottom: 25px;
@@ -1292,6 +1375,17 @@ section,
 
 .services .service-item:hover .icon {
   background: #fff;
+}
+
+@media (max-width: 300px) {
+  #services .row {
+    row-gap: 10px; /* mengurangi jarak antar baris */
+    column-gap: 10px; /* opsional: jarak antar kolom */
+  }
+
+  #services .service-item {
+    padding: 15px; /* jika ingin komponen lebih ringkas */
+  }
 }
 
 /*--------------------------------------------------------------

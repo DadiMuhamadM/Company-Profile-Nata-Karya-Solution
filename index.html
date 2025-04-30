@@ -49,8 +49,8 @@
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="" />
-          <h1 class="sitename">CV. Nata Karya Solution</h1>
+          <!-- <img src="assets/img/logo-nobg.png" alt="" /> -->
+          <h2 class="sitename">CV. Nata Karya Solution</h2>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -175,17 +175,106 @@
       <!-- /About Section -->
 
       <!-- Values Section -->
-      <section id="values" class="values section">
+      <section id="testimonials" class="testimonials section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Our Values</h2>
           <p>What we value most<br /></p>
         </div>
         <!-- End Section Title -->
+         
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              
 
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                
+                  <img src="assets/img/values-3.png" class="img-fluid" alt="" />
+                  <h3>Solusi Terintegrasi</h3>
+                  <p>
+                    Kami tidak hanya menyediakan produk, tapi juga solusi
+                    menyeluruh yang mencakup barang, jasa, dan layanan IT sesuai
+                    kebutuhan klien.
+                  </p>
+            
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+               
+                  <img src="assets/img/values-2.png" class="img-fluid" alt="" />
+                  <h3>Kepercayaan</h3>
+                  <p>
+                    Kami membangun hubungan jangka panjang dengan klien melalui
+                    komitmen, transparansi, dan integritas.
+                  </p>
+              
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                
+                    <img src="assets/img/values-1.png" class="img-fluid" alt="" />
+                    <h3>Profesionalitas</h3>
+                    <p>
+                      Kami menjalankan setiap proyek dengan standar kerja tinggi,
+                      menjaga kualitas layanan dan ketepatan waktu.
+                    </p>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                
+                    <img src="assets/img/values-1.png" class="img-fluid" alt="" />
+                    <h3>Profesionalitas</h3>
+                    <p>
+                      Kami menjalankan setiap proyek dengan standar kerja tinggi,
+                      menjaga kualitas layanan dan ketepatan waktu.
+                    </p>
+                  
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- <div class="container">
+          <div class="row gy-4 scroll-cards d-flex flex-nowrap" id="scrollContainer">
+            <div class="col-lg-4 card-col" style="min-width: 280px;" data-aos="fade-up" data-aos-delay="100">
               <div class="card">
                 <img src="assets/img/values-1.png" class="img-fluid" alt="" />
                 <h3>Profesionalitas</h3>
@@ -195,9 +284,8 @@
                 </p>
               </div>
             </div>
-            <!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            
+            <div class="col-lg-4 card-col" data-aos="fade-up" data-aos-delay="200">
               <div class="card">
                 <img src="assets/img/values-2.png" class="img-fluid" alt="" />
                 <h3>Kepercayaan</h3>
@@ -207,9 +295,8 @@
                 </p>
               </div>
             </div>
-            <!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          
+            <div class="col-lg-4 card-col" data-aos="fade-up" data-aos-delay="300">
               <div class="card">
                 <img src="assets/img/values-3.png" class="img-fluid" alt="" />
                 <h3>Solusi Terintegrasi</h3>
@@ -220,70 +307,61 @@
                 </p>
               </div>
             </div>
-            <!-- End Card Item -->
+         
           </div>
-        </div>
+        </div> -->
       </section>
       <!-- /Values Section -->
-      <!-- Values Section Misi -->
-      <section id="values" class="values section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up" style="padding-bottom: 30px;">
-          <h2>Misi & Misi</h2>
-          <p>Visi dan Misi Perusahaan Kami <br /></p>
-        </div>
+ 
         <!-- End Section Title -->
       <!-- Visi MIsi -->
-      <section id="visi-misi" class="section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <!-- Card Visi -->
-            <div class="col-lg-6">
-              <div class="card shadow-sm border-0 h-100 p-4">
-                <div class="card-body">
-                  <h4 class="card-title mb-3">
-                    <i class="bi bi-eye-fill me-2 text-primary"></i>Visi
-                  </h4>
-                  <p class="card-text">
-                    Menjadi mitra terpercaya dalam pengadaan barang dan jasa
-                    yang profesional, terintegrasi, dan inovatif di Indonesia.
-                  </p>
+      <section id="values" class="values section">
+        <div class="container section-title" data-aos="fade-up" style="padding-bottom: 30px;">
+          <h2>Visi & Misi</h2>
+          <p>Visi dan Misi Perusahaan Kami</p>
+        </div>
+      
+        <section id="visi-misi" class="section">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4">
+              
+              <!-- Card Visi -->
+              <div class="col-lg-6">
+                <div class="card shadow-sm border-0 h-100 p-4">
+                  <div class="testimonial-item">
+                    <h4 class="card-title mb-3">
+                      <i class="bi bi-eye-fill me-2 text-primary"></i>Visi
+                    </h4>
+                    <p class="card-text">
+                      Menjadi mitra terpercaya dalam pengadaan barang dan jasa yang profesional,
+                      terintegrasi, dan inovatif di Indonesia.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Card Misi -->
-            <div class="col-lg-6">
-              <div class="card shadow-sm border-0 h-100 p-4">
-                <div class="card-body">
-                  <h4 class="card-title mb-3">
-                    <i class="bi bi-bullseye me-2 text-success"></i>Misi
-                  </h4>
-                  <ul class="card-text ps-3">
-                    <li>
-                      Memberikan layanan pengadaan barang dan jasa yang
-                      berkualitas, efisien, dan tepat waktu.
-                    </li>
-                    <li>
-                      Menghadirkan solusi menyeluruh yang mencakup kebutuhan
-                      barang, jasa fisik, dan teknologi informasi secara
-                      profesional.
-                    </li>
-                    <li>
-                      Menjalin kemitraan jangka panjang dengan pelanggan melalui
-                      pelayanan yang transparan dan berintegritas.
-                    </li>
-                    <li>
-                      Berinovasi secara berkelanjutan dalam menghadirkan layanan
-                      berbasis teknologi dan digitalisasi.
-                    </li>
-                  </ul>
+      
+              <!-- Card Misi -->
+              <div class="col-lg-6">
+                <div class="card shadow-sm border-0 h-100 p-4">
+                  <div class="testimonial-item">
+                    <h4 class="card-title mb-3">
+                      <i class="bi bi-bullseye me-2 text-success"></i>Misi
+                    </h4>
+                    <ul class="card-text ps-3">
+                      <li>Memberikan layanan pengadaan barang dan jasa yang berkualitas, efisien, dan tepat waktu.</li>
+                      <li>Menghadirkan solusi menyeluruh yang mencakup kebutuhan barang, jasa fisik, dan teknologi informasi secara profesional.</li>
+                      <li>Menjalin kemitraan jangka panjang dengan pelanggan melalui pelayanan yang transparan dan berintegritas.</li>
+                      <li>Berinovasi secara berkelanjutan dalam menghadirkan layanan berbasis teknologi dan digitalisasi.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+      
             </div>
           </div>
-        </div>
+        </section>
       </section>
+      
 
       <!-- /End Visi Misi -->
 
@@ -301,10 +379,10 @@
 
       <!-- Alt Features Section -->
       <section id="alt-features" class="alt-features section pt-0" >
-        <div class="container">
+        <div class="container">   
           <div class="row gy-5">
             <div
-              class="col-xl-7 d-flex order-2 order-xl-1"
+              class="col-12" data-aos="fade-up" data-aos-delay="200"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -376,14 +454,14 @@
                 <!-- End Feature Item -->
               </div>
             </div>
-
-            <div
+            
+            <!-- <div
               class="col-xl-5 d-flex align-items-center order-1 order-xl-2"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               <img src="assets/img/alt-features.png" class="img-fluid" alt="" />
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -399,126 +477,66 @@
           <p>Apa yang Kami Tawarkan<br /></p>
         </div>
         <!-- End Section Title -->
-
+      
         <div class="container">
           <div class="row gy-4">
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div class="service-item item-cyan position-relative">
                 <i class="bi bi-activity icon"></i>
                 <h3>Nesciunt Mete</h3>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores. Eos
-                  accusantium minus dolores iure perferendis tempore et
-                  consequatur.
-                </p>
-                <a href="#" class="read-more stretched-link"
-                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <p>Provident nihil minus qui consequatur non omnis maiores...</p>
+                <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+      
+            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
               <div class="service-item item-orange position-relative">
                 <i class="bi bi-broadcast icon"></i>
                 <h3>Eosle Commodi</h3>
-                <p>
-                  Ut autem aut autem non a. Sint sint sit facilis nam iusto
-                  sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-                </p>
-                <a href="#" class="read-more stretched-link"
-                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint...</p>
+                <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+      
+            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
               <div class="service-item item-teal position-relative">
                 <i class="bi bi-easel icon"></i>
                 <h3>Ledo Markt</h3>
-                <p>
-                  Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
-                  Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
-                </p>
-                <a href="#" class="read-more stretched-link"
-                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur...</p>
+                <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
+      
+            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
               <div class="service-item item-red position-relative">
                 <i class="bi bi-bounding-box-circles icon"></i>
                 <h3>Asperiores Commodi</h3>
-                <p>
-                  Non et temporibus minus omnis sed dolor esse consequatur.
-                  Cupiditate sed error ea fuga sit provident adipisci neque.
-                </p>
-                <a href="#" class="read-more stretched-link"
-                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <p>Non et temporibus minus omnis sed dolor esse consequatur...</p>
+                <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
+      
+            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
               <div class="service-item item-indigo position-relative">
                 <i class="bi bi-calendar4-week icon"></i>
-                <h3>Velit Doloremque.</h3>
-                <p>
-                  Cumque et suscipit saepe. Est maiores autem enim facilis ut
-                  aut ipsam corporis aut. Sed animi at autem alias eius labore.
-                </p>
-                <a href="#" class="read-more stretched-link"
-                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <h3>Velit Doloremque</h3>
+                <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut...</p>
+                <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
+      
+            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
               <div class="service-item item-pink position-relative">
                 <i class="bi bi-chat-square-text icon"></i>
                 <h3>Dolori Architecto</h3>
-                <p>
-                  Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
-                  neque non et debitis iure. Corrupti recusandae ducimus enim.
-                </p>
-                <a href="#" class="read-more stretched-link"
-                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut...</p>
+                <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
-            <!-- End Service Item -->
           </div>
         </div>
       </section>
+      
       <!-- /Services Section -->
 
 
